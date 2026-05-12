@@ -1,0 +1,219 @@
+<Window x:Class="WindowsBar.MainBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowsBar"
+        Height="36"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        Left="0" Top="0"
+        UseLayoutRounding="True"
+        SnapsToDevicePixels="True"
+        TextOptions.TextFormattingMode="Display">
+
+    <Window.Resources>
+        <Style x:Key="GlassButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Foreground" Value="#EEEEFF"/>
+            <Setter Property="FontFamily" Value="Segoe UI Variable Display"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="8,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#22FFFFFF"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#33FFFFFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="Separator" TargetType="Rectangle">
+            <Setter Property="Width" Value="1"/>
+            <Setter Property="Fill" Value="#33FFFFFF"/>
+            <Setter Property="Margin" Value="4,6"/>
+        </Style>
+
+        <Style x:Key="StatusText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#DDEEFF"/>
+            <Setter Property="FontFamily" Value="Segoe UI Variable Display"/>
+            <Setter Property="FontSize" Value="11.5"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="PillBorder" TargetType="Border">
+            <Setter Property="Background" Value="#1AFFFFFF"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="8,0"/>
+            <Setter Property="Margin" Value="2,4"/>
+            <Setter Property="BorderBrush" Value="#22FFFFFF"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Resources>
+
+    <!-- Root glass bar -->
+    <Border x:Name="RootBorder"
+            CornerRadius="0,0,12,12"
+            BorderThickness="0,0,0,1"
+            BorderBrush="#33FFFFFF">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop x:Name="GradTop" Color="#CC0F0C23" Offset="0"/>
+                <GradientStop x:Name="GradBot" Color="#991A0A40" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Transparent full-bar click catcher — sits behind all controls.
+                 Fill must be Transparent (not null) so hit-testing works. -->
+            <Rectangle Grid.Column="0" Grid.ColumnSpan="3"
+                       Fill="Transparent"
+                       MouseLeftButtonUp="BarBackground_MouseLeftButtonUp"
+                       Cursor="Arrow"/>
+            
+            <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="6,0">
+                <Button x:Name="BtnStart" Style="{StaticResource GlassButton}"
+                        Width="32" Height="28" Click="BtnStart_Click" ToolTip="Start">
+                    <Image Source="pack://application:,,,/windows.png" Width="16" Height="16" Stretch="Uniform" RenderOptions.BitmapScalingMode="HighQuality"/>
+                </Button>
+
+                <Rectangle Style="{StaticResource Separator}"/>
+
+                <TextBlock x:Name="TxtActiveWindow"
+                           Style="{StaticResource StatusText}"
+                           Text="Desktop"
+                           MaxWidth="360"
+                           TextTrimming="CharacterEllipsis"
+                           Margin="4,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal"
+                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Border Style="{StaticResource PillBorder}" Padding="14,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="TxtDay" Style="{StaticResource StatusText}"
+                                   Foreground="#99CCFF" Margin="0,0,6,0"/>
+                        <TextBlock x:Name="TxtTime" Style="{StaticResource StatusText}"
+                                   FontSize="13" FontWeight="SemiBold" Foreground="#EEEEFF"/>
+                        <TextBlock x:Name="TxtDate" Style="{StaticResource StatusText}"
+                                   Foreground="#99CCFF" Margin="6,0,0,0"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal"
+                        HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,8,0">
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,12,0">
+
+                    <ItemsControl x:Name="DesktopList">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="4,0" Cursor="Hand" MouseLeftButtonUp="Desktop_Click" MouseDown="Desktop_MouseDown" Background="Transparent">
+                                    <Grid>
+                                        <Border Style="{StaticResource PillBorder}" Padding="10,0" Visibility="{Binding ActiveVis}">
+                                            <TextBlock Style="{StaticResource StatusText}" Text="{Binding Number}" Foreground="#EEEEFF"/>
+                                        </Border>
+
+                                        <Ellipse Width="8" Height="8" Fill="#66FFFFFF" Visibility="{Binding InactiveVis}"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <Button x:Name="BtnAddDesktop" Style="{StaticResource GlassButton}" Width="28" Height="28" Click="BtnAddDesktop_Click" ToolTip="New Desktop">
+                        <TextBlock Text="+" FontSize="16" FontWeight="Light" Foreground="#AACCFF" VerticalAlignment="Center" Margin="0,-2,0,0"/>
+                    </Button>
+
+                </StackPanel>
+
+                <Border x:Name="NetworkPill" Style="{StaticResource PillBorder}" Padding="6,0" ToolTip="Network" Cursor="Hand" MouseLeftButtonUp="BtnQuickSettings_Click">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock x:Name="TxtWifiName" Style="{StaticResource StatusText}" Text="Loading..." MaxWidth="80" TextTrimming="CharacterEllipsis" Margin="0,0,6,0" Visibility="Collapsed"/>
+
+                        <Canvas x:Name="NetIcon" Width="16" Height="12" VerticalAlignment="Center">
+                            <Path x:Name="WifiDot" Data="M8,10 A1,1 0 1,1 8,10.001" Stroke="#AACCFF" StrokeThickness="1.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/>
+                            <Path x:Name="WifiWave1" Data="M5,7.5 A4.2,4.2 0 0,1 11,7.5" Stroke="#AACCFF" StrokeThickness="1.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Fill="Transparent"/>
+                            <Path x:Name="WifiWave2" Data="M2.5,5 A8,8 0 0,1 13.5,5" Stroke="#AACCFF" StrokeThickness="1.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Fill="Transparent"/>
+                            <Path x:Name="WifiWave3" Data="M0,2.5 A11.5,11.5 0 0,1 16,2.5" Stroke="#AACCFF" StrokeThickness="1.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Fill="Transparent"/>
+
+                            <Path x:Name="EthIcon" Visibility="Collapsed" Data="M2,2 L14,2 L14,10 L10,10 L10,12 L6,12 L6,10 L2,10 Z M5,4 L5,8 M8,4 L8,8 M11,4 L11,8"
+                  Stroke="#AACCFF" StrokeThickness="1.2" Fill="Transparent"/>
+                            <Path x:Name="NoNetIcon" Visibility="Collapsed" Data="M1,1 L15,11 M15,1 L1,11"
+                  Stroke="#FF6666" StrokeThickness="1.5"/>
+                        </Canvas>
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="BatteryPill" Style="{StaticResource PillBorder}"
+                        Padding="6,0" Visibility="Collapsed" ToolTip="Battery" Cursor="Hand" MouseLeftButtonUp="BtnQuickSettings_Click">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Canvas Width="20" Height="11" VerticalAlignment="Center" Margin="0,0,4,0">
+                            <Rectangle Canvas.Left="0" Canvas.Top="1" Width="18" Height="9"
+                                       RadiusX="2" RadiusY="2" Stroke="#AACCFF" StrokeThickness="1.2" Fill="Transparent"/>
+                            <Rectangle Canvas.Left="18" Canvas.Top="3.5" Width="2" Height="4" Fill="#AACCFF" RadiusX="1" RadiusY="1"/>
+                            <Rectangle x:Name="BattFill" Canvas.Left="2" Canvas.Top="3"
+                                       Width="10" Height="5" RadiusX="1" RadiusY="1" Fill="#66FF99"/>
+                        </Canvas>
+                        <TextBlock x:Name="TxtBattery" Style="{StaticResource StatusText}" Text="100%"/>
+                        <TextBlock x:Name="TxtCharging" Style="{StaticResource StatusText}"
+                                   Text="⚡" FontSize="9" Visibility="Collapsed" Margin="2,0,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Rectangle Style="{StaticResource Separator}"/>
+
+                
+
+
+                <Button x:Name="BtnVolume" Style="{StaticResource GlassButton}" Width="28" Height="28" Click="BtnVolume_Click" ToolTip="Sound Settings">
+                    <Canvas Width="16" Height="14" VerticalAlignment="Center">
+                        <Path x:Name="VolSpeaker" Data="M3,5 L3,9 L6,9 L10,12 L10,2 L6,5 Z M12,5 A3,3 0 0,1 12,9 M13.5,3.5 A5.5,5.5 0 0,1 13.5,10.5" 
+              Stroke="#AACCFF" StrokeThickness="1.3" Fill="#44AACCFF"/>
+                        <Path x:Name="VolMute" Data="M11,5 L15,9 M15,5 L11,9" 
+              Stroke="#FF6666" StrokeThickness="1.5" Visibility="Collapsed"/>
+                    </Canvas>
+                </Button>
+
+
+                <Button x:Name="BtnNotif" Style="{StaticResource GlassButton}"
+                        Width="28" Height="28" Click="BtnNotif_Click" ToolTip="Action Center">
+                    <Canvas Width="14" Height="14">
+                        <Path Data="M7,1 A4,4 0 0,0 3,5 L3,9 L1,11 L13,11 L11,9 L11,5 A4,4 0 0,0 7,1 Z M5.5,11.5 A1.5,1.5 0 0,0 8.5,11.5"
+                              Stroke="#AACCFF" StrokeThickness="1.3" Fill="#22AACCFF"/>
+                    </Canvas>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

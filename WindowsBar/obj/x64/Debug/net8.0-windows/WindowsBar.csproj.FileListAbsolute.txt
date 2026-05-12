@@ -1,0 +1,89 @@
+D:\downloads\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.exe
+D:\downloads\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.deps.json
+D:\downloads\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.runtimeconfig.json
+D:\downloads\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.dll
+D:\downloads\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.pdb
+D:\downloads\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\Hardcodet.NotifyIcon.Wpf.dll
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.AssemblyReference.cache
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\MainBar.baml
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\SettingsWindow.baml
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\App.baml
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\MainBar.g.cs
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\SettingsWindow.g.cs
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\App.g.cs
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar_MarkupCompile.cache
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.g.resources
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.GeneratedMSBuildEditorConfig.editorconfig
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.AssemblyInfoInputs.cache
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.AssemblyInfo.cs
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.CoreCompileInputs.cache
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.Up2Date
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.dll
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\refint\WindowsBar.dll
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.pdb
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.genruntimeconfig.cache
+D:\downloads\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\ref\WindowsBar.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.exe
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.deps.json
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.runtimeconfig.json
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.pdb
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\Hardcodet.NotifyIcon.Wpf.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.AssemblyReference.cache
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\MainBar.baml
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\SettingsWindow.baml
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\App.baml
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\MainBar.g.cs
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\SettingsWindow.g.cs
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\App.g.cs
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar_MarkupCompile.cache
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.g.resources
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.AssemblyInfoInputs.cache
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.AssemblyInfo.cs
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.CoreCompileInputs.cache
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.Up2Date
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\refint\WindowsBar.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.pdb
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.genruntimeconfig.cache
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\obj\x64\Debug\net8.0-windows\ref\WindowsBar.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Asio.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Core.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Midi.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Wasapi.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.WinForms.dll
+C:\Users\dipan\source\repos\WindowsBar_Project\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.WinMM.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.exe
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.deps.json
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.runtimeconfig.json
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\WindowsBar.pdb
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\Hardcodet.NotifyIcon.Wpf.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Asio.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Core.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Midi.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.Wasapi.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.WinForms.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\bin\x64\Debug\net8.0-windows\NAudio.WinMM.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.AssemblyReference.cache
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\MainBar.baml
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\SettingsWindow.baml
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\App.baml
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\MainBar.g.cs
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\SettingsWindow.g.cs
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\App.g.cs
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar_MarkupCompile.cache
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.g.resources
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.AssemblyInfoInputs.cache
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.AssemblyInfo.cs
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.CoreCompileInputs.cache
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.csproj.Up2Date
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\refint\WindowsBar.dll
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.pdb
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\WindowsBar.genruntimeconfig.cache
+D:\Projects\WindowsBar_Project_ dotNet\WindowsBar\obj\x64\Debug\net8.0-windows\ref\WindowsBar.dll
